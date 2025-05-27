@@ -1,0 +1,174 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Russo+One&display=swap');
+
+/* Global Style */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: white;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+:root {
+    /* Fonts */
+    --font_1: "Russo One", sans-serif;
+    --font_2: "Lexend", sans-serif;
+    /* Colors */
+    --main_color: black;
+    --main_theme: rgb(15, 15, 15);
+    --main_themeLight: rgb(30, 30, 30);
+    --main_themeDark: rgb(10, 10, 10);
+}
+
+/* Span Color */
+.span_color {
+    color: var(--main_color);
+}
+
+/* Containers */
+.page_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--main_themeDark);
+    background-attachment: fixed;
+    background-size: 15vw;
+    background-image: url(/library/image/texture/inspiration-geometry.png);
+    flex-direction: column;
+}
+
+/* Socials Styling */
+.social_portrait {
+    width: 8vw;
+    height: auto;
+    border-radius: 100vw;
+    margin-top: 5vh;
+    padding: 5px;
+    border: 2px solid var(--main_color);
+    box-shadow: 0 0 20px black;
+}
+
+.socials_title {
+    font-family: var(--font_1);
+    font-size: 2.5vw;
+    margin-top: 2vh;
+    text-align: center;
+    font-weight: 100;
+}
+
+.socials_description {
+    font-family: var(--font_2);
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 1vh;
+    color: rgb(185, 185, 185);
+    font-weight: 300;
+    width: 35vw;
+}
+.socials_projects {
+    width: 100%;
+    height: 12vh;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.socials_projectsLink {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.socials_projectsIcon {
+    height: 40%;
+    width: auto;
+    filter: saturate(0%) brightness(150%) contrast(120%);
+}
+
+.socials_projectsIcon:hover {
+    filter: saturate(100%) brightness(100%) contrast(100%);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.socials_holder {
+    width: 100%;
+    height: auto;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    overflow: visible;
+}
+
+.socials_a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.socials_button {
+    width: 35%;
+    height: 12vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--main_theme);
+    border: none;
+    border-left: 5px solid var(--main_color);
+    overflow: visible;
+}
+
+.socials_button:hover {
+    border-left: 15px solid var(--main_color);
+    background-color: var(--main_themeLight);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.socials_button:hover .socials_name {
+    text-shadow: .1em .1em 0 rgb(92, 92, 92);
+}
+
+.socials_icon {
+    height: 70%;
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    border-radius: 100vw;
+    margin-left: 2vw;
+}
+
+.socials_name {
+    font-family: var(--font_1);
+    font-size: 2vw;
+    margin-left: 2vw;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: white;
+}
